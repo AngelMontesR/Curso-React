@@ -6,9 +6,15 @@
 import {heroes,owners} from '../data/heroes';
 
 const getHeroeById = (id) => heroes.find((elemento)=> elemento.id == id);
+const getHeroesByOwner = (owner) => heroes.filter((elemento)=> elemento.owner == owner);
 // console.log(getHeroeById(2))
 
-const getHeroesByOwner = (owner) => heroes.filter((elemento)=> elemento.owner == owner);
+export{
+    getHeroeById,
+    getHeroesByOwner
+}
 
-console.log(getHeroesByOwner('Marvel'))
-console.log(owners)
+
+
+// console.log(getHeroesByOwner('Marvel'))
+// console.log(owners)
