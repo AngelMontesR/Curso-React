@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {App} from './TiendaApp';
 import {FirstApp} from './FirstApp'
+import './app.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App/>
-        <FirstApp/>
+        <FirstApp title="Pagina Primera"/>
     </React.StrictMode>
 )
